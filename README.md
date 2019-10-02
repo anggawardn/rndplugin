@@ -1,5 +1,5 @@
 # Kong Plugins "rndplugin"
-### kong plugin to check request token authorization and forward request to filer payload(by security-matrix) written in lua
+### kong plugin to check request token authorization and forward request to filter payload(by security-matrix) written in lua
 
  to add the plugin:
 ```
