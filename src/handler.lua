@@ -18,7 +18,7 @@ function RndpluginHandler:access(conf)
 
     --check dia authorized apa nggak
     res, code, response_headers, status = http.request{
-      url = authPath,
+      url = self.authPath,
       ssl_verify = false,
       method = "GET",
       headers = {
