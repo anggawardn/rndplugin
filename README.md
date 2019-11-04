@@ -21,4 +21,4 @@ curl -X POST http://kong:8001/services/{service-name}/plugins \
 
  `securityMatrixPath` parameter is a endpoint path to filter the payload. It will forward the original responses from services to security matrix using POST request method. you can use the additional header "Service-Path" added by the plugin to identify the request origin.
 
- `checkAuthPath` parameter is a endpont path to check the token authorization. It will do the GET request to the "check" endpoint and carrying the request token. if the token not authorized, it will return 401 (not-authorized) error early and wont forward the request to security matrix filter.
+ `checkAuthPath` parameter is a endpont path to check the token authorization. It will do the GET request to the "check" endpoint and carrying the request token. if the token not authorized, it will return 401 (not-authorized) error early and won't forward the request to the backend services(and security matrix filter).
